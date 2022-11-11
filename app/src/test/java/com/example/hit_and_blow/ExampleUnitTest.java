@@ -15,5 +15,6 @@ public class ExampleUnitTest {
         assertEquals(4, 2 + 2);
         System.out.println("市丸元輝");
         System.out.println("難波貴弘");
+        System.out.println("河野佑介");
     }
 }
