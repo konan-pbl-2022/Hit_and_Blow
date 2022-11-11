@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "Hit_and_Blow"
