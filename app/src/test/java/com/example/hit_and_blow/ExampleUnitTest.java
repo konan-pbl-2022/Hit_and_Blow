@@ -17,5 +17,6 @@ public class ExampleUnitTest {
         System.out.println("難波貴弘");
         System.out.println("河野佑介");
         System.out.println("山根史也");
+        System.out.println("中坂智也");
     }
 }
