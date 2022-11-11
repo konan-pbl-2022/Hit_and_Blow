@@ -4,6 +4,7 @@ public class input_numbers {
     /*
     int digit = title.getDigit();
     int input_nums = new int[digit];
+    Button ok = (Button) findviewById(R.Id.okのボタンId);
     Button num_1 = (Button) findviewById(R.Id.1のボタンId);
     Button num_2 = (Button) findviewById(R.Id.2のボタンId);
     Button num_3 = (Button) findviewById(R.Id.3のボタンId);
