@@ -110,5 +110,9 @@ public class input_numbers {
 
     if(change==digit)
 
+    public int get_input_nums(){
+        return this.input_nums;
+    }
+
      */
 }
