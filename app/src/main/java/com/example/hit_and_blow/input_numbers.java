@@ -9,10 +9,11 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class input_numbers {
+    @Override
     int digit = title.getDigit();
     /*
     int input_nums = new int[digit];
-    Button ok = (Button) findviewById(R.Id.okのボタンId);
+    Button ok = (Button) findviewById(R.Id.Button_delete);
     Button num_1 = (Button) findviewById(R.Id.1のボタンId);
     Button num_2 = (Button) findviewById(R.Id.2のボタンId);
     Button num_3 = (Button) findviewById(R.Id.3のボタンId);
@@ -23,6 +24,8 @@ public class input_numbers {
     Button num_8 = (Button) findviewById(R.Id.8のボタンId);
     Button num_9 = (Button) findviewById(R.Id.9のボタンId);
     Button num_0 = (Button) findviewById(R.Id.0のボタンId);
+    Button delete = (Button) findviewById(R.Id.Button_delete);
+     */
     /*
     TextView seq0 = (TextView)findViewById(R.Id.text);
     TextView seq1 = (TextView)findViewById(R.Id.text);
