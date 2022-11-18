@@ -23,12 +23,11 @@ public class input_numbers {
     Button num_8 = (Button) findviewById(R.Id.8のボタンId);
     Button num_9 = (Button) findviewById(R.Id.9のボタンId);
     Button num_0 = (Button) findviewById(R.Id.0のボタンId);
-    Button seq_0 = (Button) findviewById(R.Id.配列0のボタンId);
-    Button seq_1 = (Button) findviewById(R.Id.配列1のボタンId);
-    Button seq_2 = (Button) findviewById(R.Id.配列2のボタンId);
+    /*
     TextView seq0 = (TextView)findViewById(R.Id.text);
     TextView seq1 = (TextView)findViewById(R.Id.text);
     TextView seq2 = (TextView)findViewById(R.Id.text);
+    /*
     if(digit>3){
         Button seq_3 = (Button)findviewById(R.Id.配列3のボタンId);
         TextView seq3 = (TextView)findViewById(R.Id.text);
@@ -117,12 +116,6 @@ public class input_numbers {
             imput_nums[change]=0;
             change++;
             num0.isEnabled=false;
-        }
-    });
-    seq_0.setOnClickListener(new View.OnClickListener(){
-        @Override
-        public void onClick(View v){
-
         }
     });
 
