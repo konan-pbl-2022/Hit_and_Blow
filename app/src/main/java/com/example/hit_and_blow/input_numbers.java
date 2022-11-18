@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class input_numbers {
+public class input {
     @Override
     int digit = title.getDigit();
     /*
