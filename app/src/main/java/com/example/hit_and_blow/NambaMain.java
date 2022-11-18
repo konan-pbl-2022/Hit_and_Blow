@@ -11,6 +11,7 @@ import android.content.ComponentName;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 
+
 public class NambaMain extends AppCompatActivity{
     public static void main(String[] args) {
 
@@ -69,7 +70,7 @@ public class NambaMain extends AppCompatActivity{
                     //受け取った値をbへ代入
                     //String b = a.readLine();
 
-                    b=input.get_input_nums();
+                    b=input.get_imput_nums();
                     //受け取った数値をnへ代入
 
                     for(int i=2; i>=0; i--){
