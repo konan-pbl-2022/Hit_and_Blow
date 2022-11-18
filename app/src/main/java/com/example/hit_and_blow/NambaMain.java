@@ -1,12 +1,24 @@
 package com.example.hit_and_blow;
 
-public class nanba_main {
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import android.content.Intent;
+
+import android.content.ComponentName;
+import android.content.pm.PackageManager;
+import android.os.Bundle;
+
+public class NambaMain extends AppCompatActivity{
+    public static void main(String[] args) {
 
     ////乱数字の配列（number）作成
     //配列を作成
     int[] number = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-    //配列の中身を並べ替え(シャッフル)
-    for (int i = number.length - 1; i > 0; i--) {
+    /* 配列の中身を並べ替え(シャッフル) */
+    for(int i = number.length - 1; i > 0; i--) {
         int r = (int) (Math.random() * (i + 1));
         int tmp = number[i];
         number[i] = number[r];
@@ -16,7 +28,7 @@ public class nanba_main {
     //numberからplayNumber分配列要素をコピーする
     int playNumber = 4; //桁数決め////
     int[] answer = new int[playNumber];
-    if (number[0] == 0) {
+    if(number[0] == 0) {
         for (int i = 0; i < answer.length; i++) {
             answer[i] = number[i + 1];
         }
@@ -26,7 +38,7 @@ public class nanba_main {
         }
     }
     // テスト用に答えをコンソールに表示(ゲーム時は削除)
-    for (int a : answer) {
+    for(int a=0 ;a<answer.length;a++) {
         System.out.print(a + "\t");
     }
     //改行
@@ -36,6 +48,9 @@ public class nanba_main {
         int blow = 0;
         int count = 0;
         int maxPlay =5; //プレイ回数
+        int b[];
+        int n=0;
+        int d=1;
         boolean gameFlag = false;
         //-------------------------------------------------
         //数字が一致（hit=playNumber）またはcountが任意の数値になるまで繰り返す
@@ -48,15 +63,22 @@ public class nanba_main {
             while (!validCheck) { // 入力チェック開始
                 try {
                     //任意の数字をコンソールより取得
-                    BufferedReader a = new BufferedReader(new InputStreamReader(System.in));
+                    //BufferedReader a = new BufferedReader(new InputStreamReader(System.in));
                     int[] inNum = new int[playNumber];
 
                     //受け取った値をbへ代入
-                    String b = a.readLine();
+                    //String b = a.readLine();
+
+                    b=input.get_input_nums();
                     //受け取った数値をnへ代入
-                    int n = Integer.parseInt(b);
+
+                    for(int i=2; i>=0; i--){
+                        n+=b[i]*d;
+                        d*=10;
+                    }
+
                     //受け取った値の最初の1文字をstrへ代入
-                    String zeroCheck = b.substring(0, 1);
+                    //String zeroCheck = b.substring(0, 1);
                     //桁数をdigitsへ代入
                     int digits = Integer.toString(n).length();
 
@@ -67,22 +89,22 @@ public class nanba_main {
                     //受け取った値の桁数をdigitsへ代入
                     digits = Integer.toString(n).length();
 
-                    if (zeroCheck.equals("0")) {
-                        System.out.println(digits + ":" + playNumber);
-                        System.out.println("先頭の数字に0は入力できません。");
-                    } else if (digits != playNumber) {
-                        if (digits < playNumber || n < Math.pow(10, playNumber - 1)) { //桁チェック
-                            System.out.println(digits);
-                            System.out.println("桁が少ないです、" + playNumber + "桁の数字を入力し直してください");
-                        } else if (digits > playNumber) {
-                            System.out.println("桁が多すぎます、" + playNumber + "桁の数字を入力してください");
-                        }
-                    } else if (duplicateCheck(inNum)) { //同じ数字が使われていたら
-                        System.out.println("同じ数字が使われています");
-                    } else { //異常がなければ
-                        validCheck = true;
-                        userNumArray = inNum;
-                    }
+                    //if (zeroCheck.equals("0")) {
+                    //    System.out.println(digits + ":" + playNumber);
+                    //    System.out.println("先頭の数字に0は入力できません。");
+                    //} else if (digits != playNumber) {
+                    //    if (digits < playNumber || n < Math.pow(10, playNumber - 1)) { //桁チェック
+                    //        System.out.println(digits);
+                    //        System.out.println("桁が少ないです、" + playNumber + "桁の数字を入力し直してください");
+                    //    } else if (digits > playNumber) {
+                    //        System.out.println("桁が多すぎます、" + playNumber + "桁の数字を入力してください");
+                    //    }
+                    //} else if (duplicateCheck(inNum)) { //同じ数字が使われていたら
+                    //    System.out.println("同じ数字が使われています");
+                    //} else { //異常がなければ
+                    //    validCheck = true;
+                    //    userNumArray = inNum;
+                    //}
                 } catch (IOException e) {
                     System.out.println(e);
                 } catch (NumberFormatException o) {

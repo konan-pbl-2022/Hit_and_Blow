@@ -1,9 +1,9 @@
 package com.example.hit_and_blow;
 
 import androidx.appcompat.app.AppCompatActivity;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+
+import android.content.Intent;
+
 import android.os.Bundle;
 
 
@@ -15,5 +15,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
+    }
+
+    Intent intent = new Intent(MainActivity.this, NambaMain.class);
+    @Override
+    public void startActivity(Intent intent) {
+        super.startActivity(intent);
     }
 }
