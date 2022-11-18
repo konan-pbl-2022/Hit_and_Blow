@@ -1,8 +1,16 @@
 package com.example.hit_and_blow;
 
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+
 public class input_numbers {
-    /*
     int digit = title.getDigit();
+    /*
     int input_nums = new int[digit];
     Button ok = (Button) findviewById(R.Id.okのボタンId);
     Button num_1 = (Button) findviewById(R.Id.1のボタンId);
@@ -18,8 +26,18 @@ public class input_numbers {
     Button seq_0 = (Button) findviewById(R.Id.配列0のボタンId);
     Button seq_1 = (Button) findviewById(R.Id.配列1のボタンId);
     Button seq_2 = (Button) findviewById(R.Id.配列2のボタンId);
-    if(digit>3)Button seq_3 = (Button) findviewById(R.Id.配列3のボタンId);
-    if(digit>4)Button seq_4 = (Button) findviewById(R.Id.配列4のボタンId);
+    TextView seq0 = (TextView)findViewById(R.Id.text);
+    TextView seq1 = (TextView)findViewById(R.Id.text);
+    TextView seq2 = (TextView)findViewById(R.Id.text);
+    if(digit>3){
+        Button seq_3 = (Button)findviewById(R.Id.配列3のボタンId);
+        TextView seq3 = (TextView)findViewById(R.Id.text);
+    }
+    if(digit>4){
+        Button seq_4 = (Button)findviewById(R.Id.配列4のボタンId);
+        TextView seq3 = (TextView)findViewById(R.Id.text);
+    }
+    */
     int change = 0;
 
     num_1.setOnClickListener(new View.OnClickListener(){
@@ -29,15 +47,14 @@ public class input_numbers {
             change++;
             num_1.isEnabled=false;
         }
-    })
+    });
     num_2.setOnClickListener(new View.OnClickListener(){
-        @Override
         public void onClick(View v){
             imput_nums[change]=2;
             change++;
             num2.isEnabled=false;
         }
-    })
+    });
     num_3.setOnClickListener(new View.OnClickListener(){
         @Override
         public void onClick(View v){
@@ -45,7 +62,7 @@ public class input_numbers {
             change++;
             num3.isEnabled=false;
         }
-    })
+    });
     num_4.setOnClickListener(new View.OnClickListener(){
         @Override
         public void onClick(View v){
@@ -53,7 +70,7 @@ public class input_numbers {
             change++;
             num4.isEnabled=false;
         }
-    })
+    });
     num_5.setOnClickListener(new View.OnClickListener(){
         @Override
         public void onClick(View v){
@@ -61,7 +78,7 @@ public class input_numbers {
             change++;
             num5.isEnabled=false;
         }
-    })
+    });
     num_6.setOnClickListener(new View.OnClickListener(){
         @Override
         public void onClick(View v){
@@ -69,7 +86,7 @@ public class input_numbers {
             change++;
             num6.isEnabled=false;
         }
-    })
+    });
     num_7.setOnClickListener(new View.OnClickListener(){
         @Override
         public void onClick(View v){
@@ -77,7 +94,7 @@ public class input_numbers {
             change++;
             num7.isEnabled=false;
         }
-    })
+    });
     num_8.setOnClickListener(new View.OnClickListener(){
         @Override
         public void onClick(View v){
@@ -85,7 +102,7 @@ public class input_numbers {
             change++;
             num8.isEnabled=false;
         }
-    })
+    });
     num_9.setOnClickListener(new View.OnClickListener(){
         @Override
         public void onClick(View v){
@@ -93,7 +110,7 @@ public class input_numbers {
             change++;
             num9.isEnabled=false;
         }
-    })
+    });
     num_0.setOnClickListener(new View.OnClickListener(){
         @Override
         public void onClick(View v){
@@ -101,19 +118,20 @@ public class input_numbers {
             change++;
             num0.isEnabled=false;
         }
-    })
+    });
     seq_0.setOnClickListener(new View.OnClickListener(){
         @Override
         public void onClick(View v){
 
         }
-    })
+    });
 
-    if(change==digit)
+    if(change == digit){
+        okButton.isEnabled=true;
+    }
 
     public int get_input_nums(){
         return this.input_nums;
     }
 
-     */
 }
