@@ -13,37 +13,37 @@ import android.os.Bundle;
 
 
 public class NambaMain extends AppCompatActivity{
-    public static void main(String[] args) {
+    public static int tof(int input_number[]) {
 
     ////乱数字の配列（number）作成
     //配列を作成
-    int[] number = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-    /* 配列の中身を並べ替え(シャッフル) */
-    for(int i = number.length - 1; i > 0; i--) {
-        int r = (int) (Math.random() * (i + 1));
-        int tmp = number[i];
-        number[i] = number[r];
-        number[r] = tmp;
-    }
+//    int[] number = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+  //  /* 配列の中身を並べ替え(シャッフル) */
+    //for(int i = number.length - 1; i > 0; i--) {
+//        int r = (int) (Math.random() * (i + 1));
+  //      int tmp = number[i];
+    //    number[i] = number[r];
+//        number[r] = tmp;
+  //  }
     //-------------------------------------------------
     //numberからplayNumber分配列要素をコピーする
-    int playNumber = 4; //桁数決め////
-    int[] answer = new int[playNumber];
-    if(number[0] == 0) {
-        for (int i = 0; i < answer.length; i++) {
-            answer[i] = number[i + 1];
-        }
-    } else {
-        for (int i = 0; i < answer.length; i++) {
-            answer[i] = number[i];
-        }
-    }
+//    int playNumber = 3; //桁数決め////
+  //  int[] answer = new int[playNumber];
+    //if(number[0] == 0) {
+      //  for (int i = 0; i < answer.length; i++) {
+        //    answer[i] = number[i + 1];
+//        }
+  //  } else {
+    //    for (int i = 0; i < answer.length; i++) {
+      //      answer[i] = number[i];
+        //}
+//    }
     // テスト用に答えをコンソールに表示(ゲーム時は削除)
-    for(int a=0 ;a<answer.length;a++) {
-        System.out.print(a + "\t");
-    }
+//    for(int a=0 ;a<answer.length;a++) {
+  //      System.out.print(a + "\t");
+    //}
     //改行
-    System.out.println();
+    //System.out.println();
         //hit blow count の初期化
         int hit = 0;
         int blow = 0;
@@ -70,7 +70,7 @@ public class NambaMain extends AppCompatActivity{
                     //受け取った値をbへ代入
                     //String b = a.readLine();
 
-                    b=input.get_imput_nums();
+                    b=input_number;
                     //受け取った数値をnへ代入
 
                     for(int i=2; i>=0; i--){
@@ -106,12 +106,13 @@ public class NambaMain extends AppCompatActivity{
                     //    validCheck = true;
                     //    userNumArray = inNum;
                     //}
-                } catch (IOException e) {
-                    System.out.println(e);
-                } catch (NumberFormatException o) {
-                    System.out.println("数字以外のものが入力されています");
-                } catch (ArrayIndexOutOfBoundsException f) {
-                    System.out.println(f);
+
+                //} catch (IOException e) {
+                //    System.out.println(e);
+                //} catch (NumberFormatException o) {
+                //    System.out.println("数字以外のものが入力されています");
+                //} catch (ArrayIndexOutOfBoundsException f) {
+                //    System.out.println(f);
                 }
             }
             //------------------入力チェック終了-------------------------------
