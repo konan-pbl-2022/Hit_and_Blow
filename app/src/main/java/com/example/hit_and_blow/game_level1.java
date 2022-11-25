@@ -193,7 +193,10 @@ public class game_level1 extends AppCompatActivity {
                 num[9].setEnabled(true);
                 ok.setEnabled(false);
                 history[times] = Input.get_imput_nums();
-                //hit_blow[times] = NambaMain(input_nums[times], answer);
+                NambaMain HaB =  new NambaMain();
+                HaB.namba(answer,history[times]);
+                hit_blow[times][0] = HaB.hit;
+                hit_blow[times][1] = HaB.blow;
                 if (hit_blow[times][0] == 3) {
                     Intent intent = new Intent(game_level1.this, result.class);
                     startActivity(intent);
