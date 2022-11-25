@@ -21,7 +21,7 @@
         android:layout_width="398dp"
         android:layout_height="32dp"
         android:text="数字を当てるゲーム"
-        android:textColor="#070707"
+        android:textColor="#000000"
         android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
