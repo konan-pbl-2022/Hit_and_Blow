@@ -33,15 +33,16 @@
         android:id="@+id/button_back"
         android:layout_width="380dp"
         android:layout_height="108dp"
-        android:background="#FF0000"
+        android:background="#ADE36E"
         android:text="タイトルへ戻る"
         android:textColor="#000000"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/explanation1"
-        app:layout_constraintVertical_bias="0.773" />
+        app:layout_constraintVertical_bias="0.786" />
 
     <TextView
         android:id="@+id/explanation2"
@@ -103,8 +104,10 @@
         android:layout_marginTop="45dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.451"
         app:srcCompat="@drawable/document_rule_book" />
 
 
