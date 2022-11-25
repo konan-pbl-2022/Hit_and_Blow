@@ -6,12 +6,23 @@
     android:layout_height="match_parent"
     tools:context=".result">
 
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="408dp"
+        android:layout_height="726dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/_______________index" />
+
     <TextView
         android:id="@+id/text_clear"
         android:layout_width="397dp"
         android:layout_height="161dp"
         android:gravity="center"
         android:text="おめでとう！"
+        android:textColor="#F44336"
         android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,7 +34,9 @@
         android:id="@+id/button_retry"
         android:layout_width="404dp"
         android:layout_height="88dp"
+        android:background="#3F51B5"
         android:text="もう一度"
+        android:textColor="#050505"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/button_title"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,10 +50,38 @@
         android:layout_width="404dp"
         android:layout_height="88dp"
         android:layout_marginBottom="32dp"
+        android:background="#F44336"
         android:text="タイトルへ戻る"
+        android:textColor="#070707"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.428"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="418dp"
+        android:layout_height="131dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4"
+        app:srcCompat="@drawable/text_gameclear_j" />
+
+    <TextView
+        android:id="@+id/clear_time"
+        android:layout_width="182dp"
+        android:layout_height="38dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.571" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
