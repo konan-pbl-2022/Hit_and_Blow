@@ -20,11 +20,17 @@ public class game_level1 extends AppCompatActivity {
     int[][] hit_blow = new int[max_times][2];
     input Input = new input();
     int[] answer = new int[playNumber];
+    time play= new time();
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game_level1);
+        play.start();
+
 
         log[0] = findViewById(R.id.log1);
         log[1] = findViewById(R.id.log2);
@@ -195,15 +201,20 @@ public class game_level1 extends AppCompatActivity {
                 history[times] = Input.get_imput_nums();
                 hit_blow[times] = NambaMain.namba(answer,history[times]);
                 if (hit_blow[times][0] == 3) {
+                    play.end();
+                    String difftime = play.getDiffTime();
                     Intent intent = new Intent(game_level1.this, result.class);
+                    intent.putExtra("TIME" ,difftime);
                     startActivity(intent);
                 }
                 Input.delete();
                 if (times < 10) {
                     display_history();
-                } else {
-                    Intent intent2 = new Intent(game_level1.this, result2.class);
-                    startActivity(intent2);
+                }else{
+                    if(hit_blow[times][0] != 3) {
+                        Intent intent2 = new Intent(game_level1.this, result2.class);
+                        startActivity(intent2);
+                    }
                 }
 
                 times++;
@@ -241,4 +252,5 @@ public class game_level1 extends AppCompatActivity {
             ok.setEnabled(true);
         }
     }
+
 }

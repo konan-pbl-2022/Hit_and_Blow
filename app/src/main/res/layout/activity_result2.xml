@@ -6,6 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".result2">
 
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="739dp"
+        android:layout_height="859dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fall_rain" />
+
     <TextView
         android:id="@+id/text_false"
         android:layout_width="397dp"
@@ -17,30 +29,48 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.13999999" />
+        app:layout_constraintVertical_bias="0.028" />
 
     <Button
         android:id="@+id/button_retry2"
         android:layout_width="404dp"
         android:layout_height="88dp"
         android:text="もう一度"
+        android:textColor="#FF0000"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/button_title2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.428"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_false"
-        app:layout_constraintVertical_bias="0.83" />
+        app:layout_constraintVertical_bias="0.92" />
 
     <Button
         android:id="@+id/button_title2"
         android:layout_width="404dp"
         android:layout_height="88dp"
         android:layout_marginBottom="32dp"
+        android:background="#686868"
         android:text="タイトルへ戻る"
+        android:textColor="#00FF0A"
+        android:textColorHint="#050000"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.428"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="305dp"
+        android:layout_height="299dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.962"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.398"
+        app:srcCompat="@drawable/failed" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
