@@ -240,7 +240,7 @@
 
     <TextView
         android:id="@+id/log5"
-        android:layout_width="190dp"
+        android:layout_width="191dp"
         android:layout_height="38dp"
         android:layout_marginStart="4dp"
         android:layout_marginLeft="4dp"
