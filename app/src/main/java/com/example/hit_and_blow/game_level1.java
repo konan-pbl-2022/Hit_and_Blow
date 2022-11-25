@@ -210,9 +210,11 @@ public class game_level1 extends AppCompatActivity {
                 Input.delete();
                 if (times < 10) {
                     display_history();
-                } else {
-                    Intent intent2 = new Intent(game_level1.this, result2.class);
-                    startActivity(intent2);
+                }else{
+                    if(hit_blow[times][0] != 3) {
+                        Intent intent2 = new Intent(game_level1.this, result2.class);
+                        startActivity(intent2);
+                    }
                 }
 
                 times++;
