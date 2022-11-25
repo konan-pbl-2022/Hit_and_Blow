@@ -60,6 +60,7 @@ public class game_level1 extends AppCompatActivity {
         ok.setEnabled(false);
         num[0].setEnabled(false);
         answer = set_answer.setAnswer(playNumber);
+        final String str_ans= String.valueOf(answer[0]*100+answer[1]*10+answer[2]);
 
 
         num[1].setOnClickListener(new View.OnClickListener() {
@@ -213,6 +214,7 @@ public class game_level1 extends AppCompatActivity {
                 }else{
                     if(hit_blow[times][0] != 3) {
                         Intent intent2 = new Intent(game_level1.this, result2.class);
+                        intent2.putExtra("ANS", str_ans);
                         startActivity(intent2);
                     }
                 }

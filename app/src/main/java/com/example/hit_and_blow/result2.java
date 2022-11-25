@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class result2 extends AppCompatActivity {
 
@@ -13,6 +14,12 @@ public class result2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result2);
+        Intent intent =getIntent();
+        String answer = intent.getStringExtra("ANS");
+
+        TextView viewTime = (TextView) findViewById(R.id.answer);
+        viewTime.setText("答えは"+answer+"でした…");
+
         Button retry2Button = (Button)findViewById(R.id.button_retry2);
         retry2Button.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
