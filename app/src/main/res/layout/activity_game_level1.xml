@@ -9,34 +9,36 @@
 
     <Button
         android:id="@+id/button1"
-        android:layout_width="136dp"
+        android:layout_width="120dp"
         android:layout_height="57dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
         android:text="1"
         app:layout_constraintBottom_toTopOf="@+id/button4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.985" />
+        app:layout_constraintVertical_bias="0.983" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="136dp"
+        android:layout_width="120dp"
         android:layout_height="57dp"
         android:layout_marginTop="300dp"
         android:text="2"
         app:layout_constraintBottom_toTopOf="@+id/button5"
         app:layout_constraintEnd_toStartOf="@+id/button3"
-        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintHorizontal_bias="0.481"
         app:layout_constraintStart_toEndOf="@+id/button1"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.956" />
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="136dp"
+        android:layout_width="120dp"
         android:layout_height="57dp"
         android:layout_marginTop="244dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginRight="4dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
         android:text="3"
         app:layout_constraintBottom_toTopOf="@+id/button6"
         app:layout_constraintEnd_toEndOf="parent"
@@ -45,8 +47,10 @@
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="136dp"
+        android:layout_width="120dp"
         android:layout_height="57dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
         android:layout_marginBottom="8dp"
         android:text="4"
         app:layout_constraintBottom_toTopOf="@+id/button7"
@@ -54,21 +58,21 @@
 
     <Button
         android:id="@+id/button5"
-        android:layout_width="136dp"
+        android:layout_width="120dp"
         android:layout_height="57dp"
         android:layout_marginBottom="8dp"
         android:text="5"
         app:layout_constraintBottom_toTopOf="@+id/button8"
         app:layout_constraintEnd_toStartOf="@+id/button6"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.531"
         app:layout_constraintStart_toEndOf="@+id/button4" />
 
     <Button
         android:id="@+id/button6"
-        android:layout_width="136dp"
+        android:layout_width="120dp"
         android:layout_height="57dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginRight="4dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
         android:layout_marginBottom="8dp"
         android:text="6"
         app:layout_constraintBottom_toTopOf="@+id/button9"
@@ -76,8 +80,10 @@
 
     <Button
         android:id="@+id/button7"
-        android:layout_width="136dp"
+        android:layout_width="120dp"
         android:layout_height="57dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
         android:layout_marginBottom="8dp"
         android:text="7"
         app:layout_constraintBottom_toTopOf="@+id/button_delete"
@@ -85,21 +91,21 @@
 
     <Button
         android:id="@+id/button8"
-        android:layout_width="136dp"
+        android:layout_width="120dp"
         android:layout_height="57dp"
         android:layout_marginBottom="8dp"
         android:text="8"
         app:layout_constraintBottom_toTopOf="@+id/button0"
         app:layout_constraintEnd_toStartOf="@+id/button9"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.555"
         app:layout_constraintStart_toEndOf="@+id/button7" />
 
     <Button
         android:id="@+id/button9"
-        android:layout_width="136dp"
+        android:layout_width="120dp"
         android:layout_height="57dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginRight="4dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
         android:layout_marginBottom="8dp"
         android:text="9"
         app:layout_constraintBottom_toTopOf="@+id/button_ok"
@@ -107,19 +113,21 @@
 
     <Button
         android:id="@+id/button0"
-        android:layout_width="136dp"
+        android:layout_width="120dp"
         android:layout_height="57dp"
         android:layout_marginBottom="4dp"
         android:text="0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button_ok"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.481"
         app:layout_constraintStart_toEndOf="@+id/button_delete" />
 
     <Button
         android:id="@+id/button_delete"
-        android:layout_width="136dp"
+        android:layout_width="120dp"
         android:layout_height="57dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
         android:layout_marginBottom="4dp"
         android:text="Delete"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -127,10 +135,10 @@
 
     <Button
         android:id="@+id/button_ok"
-        android:layout_width="136dp"
+        android:layout_width="120dp"
         android:layout_height="57dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginRight="4dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
         android:layout_marginBottom="4dp"
         android:text="OK"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -148,7 +156,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.157" />
+        app:layout_constraintVertical_bias="0.052" />
 
     <TextView
         android:id="@+id/number_2"
@@ -159,10 +167,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/number_3"
-        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintHorizontal_bias="0.461"
         app:layout_constraintStart_toEndOf="@+id/number_1"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.157" />
+        app:layout_constraintVertical_bias="0.052" />
 
     <TextView
         android:id="@+id/number_3"
@@ -176,15 +184,16 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.157" />
+        app:layout_constraintVertical_bias="0.052" />
 
     <TextView
         android:id="@+id/log1"
         android:layout_width="190dp"
         android:layout_height="38dp"
-        android:layout_marginTop="232dp"
+        android:gravity="center"
+        android:layout_marginTop="144dp"
         app:layout_constraintEnd_toStartOf="@+id/log6"
-        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintHorizontal_bias="0.148"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -192,7 +201,8 @@
         android:id="@+id/log6"
         android:layout_width="190dp"
         android:layout_height="38dp"
-        android:layout_marginTop="232dp"
+        android:gravity="center"
+        android:layout_marginTop="144dp"
         android:layout_marginEnd="4dp"
         android:layout_marginRight="4dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -204,7 +214,7 @@
         android:layout_height="38dp"
         android:layout_marginStart="4dp"
         android:layout_marginLeft="4dp"
-        android:layout_marginTop="8dp"
+        android:gravity="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/log1" />
 
@@ -214,7 +224,7 @@
         android:layout_height="38dp"
         android:layout_marginStart="4dp"
         android:layout_marginLeft="4dp"
-        android:layout_marginTop="8dp"
+        android:gravity="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/log2" />
 
@@ -224,27 +234,27 @@
         android:layout_height="38dp"
         android:layout_marginStart="4dp"
         android:layout_marginLeft="4dp"
-        android:layout_marginTop="8dp"
+        android:gravity="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/log3" />
 
     <TextView
         android:id="@+id/log5"
-        android:layout_width="190dp"
+        android:layout_width="191dp"
         android:layout_height="38dp"
         android:layout_marginStart="4dp"
         android:layout_marginLeft="4dp"
-        android:layout_marginBottom="9dp"
-        app:layout_constraintBottom_toTopOf="@+id/button1"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/log4"
-        app:layout_constraintVertical_bias="0.55" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/log7"
         android:layout_width="190dp"
         android:layout_height="38dp"
-        android:layout_marginTop="8dp"
+        android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.851"
         app:layout_constraintStart_toEndOf="@+id/log2"
@@ -254,7 +264,7 @@
         android:id="@+id/log8"
         android:layout_width="190dp"
         android:layout_height="38dp"
-        android:layout_marginTop="8dp"
+        android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.851"
         app:layout_constraintStart_toEndOf="@+id/log3"
@@ -264,7 +274,7 @@
         android:id="@+id/log9"
         android:layout_width="190dp"
         android:layout_height="38dp"
-        android:layout_marginTop="8dp"
+        android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.851"
         app:layout_constraintStart_toEndOf="@+id/log4"
@@ -274,41 +284,14 @@
         android:id="@+id/log10"
         android:layout_width="190dp"
         android:layout_height="38dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="4dp"
         android:layout_marginRight="4dp"
-        android:layout_marginBottom="17dp"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/log5"
         app:layout_constraintTop_toBottomOf="@+id/log9"
-        app:layout_constraintVertical_bias="0.75" />
-
-    <TextView
-        android:id="@+id/hit"
-        android:layout_width="198dp"
-        android:layout_height="90dp"
-        android:gravity="center"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/blow"
-        app:layout_constraintHorizontal_bias="0.031"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.015" />
-
-    <TextView
-        android:id="@+id/blow"
-        android:layout_width="198dp"
-        android:layout_height="90dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginRight="4dp"
-        android:gravity="center"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.014" />
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
